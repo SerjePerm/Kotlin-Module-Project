@@ -1,3 +1,7 @@
+import menus.createTestData
+import menus.showArchivesMenu
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+    createTestData()
+    showArchivesMenu()
 }
