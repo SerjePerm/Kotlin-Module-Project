@@ -17,8 +17,8 @@ fun createTestData() {
 }
 
 fun showArchivesMenu() {
-    val onCreate: (MutableList<Note>) -> Unit = { _ -> MenuCreator.ShowAddItem(null) }
+    val onCreate: (MutableList<Note>) -> Unit = { _ -> MenuCreator.showAddItem(null) }
     val onSelect: (Menuable) -> Unit = { archive -> showNotesMenu(archive as Archive) }
     val onExit = { println("Программа завершена") }
-    MenuCreator.ShowSelectItem(Library.archives, 0, onCreate, onSelect, onExit)
+    MenuCreator.showSelectItem(Library.archives, 0, onCreate, onSelect, onExit)
 }

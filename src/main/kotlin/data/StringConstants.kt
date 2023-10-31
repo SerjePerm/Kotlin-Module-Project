@@ -1,9 +1,5 @@
 package data
 
-class StringConstants {
-    companion object {
-        val item_form_list = arrayOf("архивов", "заметок")
-        val item_form_create = arrayOf("архив", "заметку")
-        val item_form_new = arrayOf("нового архива", "новой заметки")
-    }
-}
+val ITEM_FORM_LIST = arrayOf("архивов", "заметок")
+val ITEM_FORM_CREATE = arrayOf("архив", "заметку")
+val ITEM_FORM_NEW = arrayOf("нового архива", "новой заметки")

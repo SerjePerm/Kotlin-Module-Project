@@ -6,10 +6,10 @@ import data.Menuable
 import data.Note
 
 fun showNotesMenu(archive: Archive) {
-    val onCreate: (MutableList<Note>) -> Unit = { notes -> MenuCreator.ShowAddItem(notes) }
+    val onCreate: (MutableList<Note>) -> Unit = { notes -> MenuCreator.showAddItem(notes) }
     val onSelect: (Menuable) -> Unit =  { note -> showNote(note as Note) }
     val onExit = { println("Переходим на экран списка архивов") }
-    MenuCreator.ShowSelectItem(archive.notes, 1, onCreate, onSelect, onExit)
+    MenuCreator.showSelectItem(archive.notes, 1, onCreate, onSelect, onExit)
 }
 
 fun showNote(note: Note) {
